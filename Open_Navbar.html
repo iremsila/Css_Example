@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration:none;
+            color: white;
+            display: block;
+            text-align: center;
+            min-width: 150px;
+        }
+        nav{
+            width: 100%;
+            background-color: darkorchid ;
+            height: 50px;
+        }
+
+        ul li:hover{
+            background-color: darkblue;
+        }
+
+        .ic-elemanlar{
+            display: none;
+            min-width: 150px;
+        }
+
+        .eleman3:hover .ic-elemanlar{
+            display: block;
+
+        }
+        .ic-eleman{
+            color: white;
+        }
+
+        .ic-elemanlar .ic-eleman:hover{
+            background-color: deeppink;
+        }
+
+    </style>
+    
+      
+  <body>
+    
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="eleman1"><a href="#"> Main Page </a></li>
+                <li class="eleman2"><a href="#"> About Us </a></li>
+                <li class="eleman3">
+                    
+                    
+                    <a href="#"> Contact</a>
+                <ul class="ic-elemanlar">
+                    <li class="ic-eleman">Phone Number</li>
+                    <li class="ic-eleman">Address</li>
+                </ul>
+                
+                </li>
+                </ul>
+        </nav>
+    </header>
+  </body>
+</html>
